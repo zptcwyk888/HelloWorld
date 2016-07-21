@@ -5,9 +5,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 public class MyActivity extends AppCompatActivity {
@@ -29,14 +30,21 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        debugFun();
+       //debugFun();
+        Button button=(Button) findViewById(R.id.content_my_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("wyk","I am study android");
+            }
+        });
     }
 
-    private void debugFun(){
+    /*private void debugFun(){
         int index=0;
         while (index<10)
             index++;
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
