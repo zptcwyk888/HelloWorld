@@ -29,14 +29,14 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-//        debugFun();
+        debugFun();
     }
 
-    /*private void debugFun(){
+    private void debugFun(){
         int index=0;
         while (index<10)
             index++;
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
